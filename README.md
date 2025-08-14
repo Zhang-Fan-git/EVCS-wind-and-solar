@@ -75,3 +75,10 @@ The Figure/ directory contains Python scripts that produce publication-ready plo
 These scripts use pandas, seaborn, and matplotlib to create comparative bar plots, violin plots, and annotated change visualizations that highlight regional disparities and temporal shifts in equity and renewable integration. They are designed to work seamlessly with the outputs from the previous analysis steps, enabling consistent and scalable figure generation for both the main text and supplementary materials.
 
 ## 🔗 Workflow Overview
+The full analysis pipeline follows a structured workflow:
+1. **Population and urban boundary data** are first cropped and processed for China, USA, and Europe.
+2. These geospatial datasets are used to **extract city-level metrics** for renewable energy potential and EV charging demand.
+3. **Matching levels** and **Gini coefficients** are computed to evaluate efficiency and equity.
+4. Finally, **visualization scripts** generate the main figures and supplementary plots to communicate the results.
+
+This end-to-end pipeline ensures reproducibility, scalability, and transparency in assessing the integration of renewable energy and electric vehicle infrastructure globally.
