@@ -67,10 +67,10 @@ Computes the **matching level** between renewable energy generation (wind and so
 Like the Gini coefficient notebook, this demonstrates the method using **the United States as a case study**, but the framework is generalizable to **China and Europe** with region-specific data.
 
 ---
-📊 Visualization: Figure Generation
+### 📊 Visualization: Figure Generation
 In addition to the core data processing and analysis notebooks, this repository includes a set of scripts dedicated to generating the main figures and supplementary visualizations presented in the study.
 
-The Figures/ directory contains Python scripts that produce publication-ready plots illustrating the key findings related to renewable energy matching levels and spatial equity (Gini coefficients) across China, the USA, and Europe. Each script corresponds to one main figure in the paper and its associated appendix figure, ensuring full reproducibility of the visual results.
+The Figure/ directory contains Python scripts that produce publication-ready plots illustrating the key findings related to renewable energy matching levels and spatial equity (Gini coefficients) across China, the USA, and Europe. Each script corresponds to one main figure in the paper and its associated appendix figure, ensuring full reproducibility of the visual results.
 
 These scripts use pandas, seaborn, and matplotlib to create comparative bar plots, violin plots, and annotated change visualizations that highlight regional disparities and temporal shifts in equity and renewable integration. They are designed to work seamlessly with the outputs from the previous analysis steps, enabling consistent and scalable figure generation for both the main text and supplementary materials.
 
