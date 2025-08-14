@@ -1,10 +1,10 @@
 # Integration of public electric vehicle charging stations and renewable energy sources: The global potential and spatial equity
 
-This repository contains a series of Jupyter notebooks that form a data processing and analysis pipeline to evaluate the **renewable energy potential and equity** of electric vehicle (EV) charging infrastructure in urban areas across **China, the USA, and Europe**.
+This repository contains a series of Jupyter notebooks that form a data processing and analysis pipeline to evaluate the **renewable energy potential and equity** of electric vehicle (EV) charging infrastructure in urban areas across **China, USA, and Europe**.
 
 The workflow integrates population data, urban boundary definitions, and renewable energy generation data to compute two key metrics at the city level:
 1. **Matching Level**: The alignment between renewable energy supply (wind and solar) and charging demand.
-2. **Gini Coefficient**: A measure of fairness (equity) in the distribution of renewable energy access across cities.
+2. **Gini Coefficient**: A measure of equity in the distribution of renewable energy access across cities.
 
 ---
 
@@ -27,7 +27,7 @@ Preprocesses global population raster data (1km resolution) downloaded from the 
 
 ### 2. `Urban boundary code.ipynb`
 **Purpose**:  
-Processes urban boundary data to extract built-up urban areas for cities in **China, the USA, and Europe**.
+Processes urban boundary data to extract built-up urban areas for cities in **China, USA, and Europe**.
 
 **Data Source**:  
 Uses the **Global City Boundary Dataset** provided by [Peng Cheng Laboratory](https://data-starcloud.pcl.ac.cn/iearthdata/), which defines built-up urban areas based on remote sensing and population density.
@@ -50,7 +50,7 @@ Calculates the **Gini coefficient** to assess the **equity** of renewable energy
 - A lower Gini value indicates more equitable distribution.
 
 **Note**:  
-While the method applies to all three regions, this notebook demonstrates the calculation using **the United States as an example** due to data availability and consistency. The same workflow can be adapted for China and Europe.
+While the method applies to all three regions, this notebook demonstrates the calculation using **USA as an example** due to data availability and consistency. The same workflow can be adapted for China and Europe.
 
 ---
 
