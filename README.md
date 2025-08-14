@@ -1,4 +1,4 @@
-# Charging Infrastructure and Renewable Energy Analysis for Cities in China, USA, and Europe
+# Integration of public electric vehicle charging stations and renewable energy sources: The global potential and spatial equity
 
 This repository contains a series of Jupyter notebooks that form a data processing and analysis pipeline to evaluate the **renewable energy potential and equity** of electric vehicle (EV) charging infrastructure in urban areas across **China, the USA, and Europe**.
 
