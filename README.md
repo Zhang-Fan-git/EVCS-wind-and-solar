@@ -117,6 +117,7 @@ USA & Europe: Parking lot locations extracted from OpenStreetMap (OSM).
 China: Parking lot locations collected via Baidu Maps API.
 Usage: In Figure 4, these parking lots are treated as candidate charging stations. Their spatial distribution and capacity are analyzed using the same Gini and matching frameworks.
 Storage: Processed parking data (after cleaning and geocoding) is stored in data/parking/.
+
 📈 Input Data for Figures
 The Figures/ directory relies on processed outputs from:
 Gini Coefficient calculation.ipynb
