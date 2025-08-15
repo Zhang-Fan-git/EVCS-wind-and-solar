@@ -97,14 +97,14 @@ Note: This large file should be downloaded separately. Processing scripts clip i
 ---
 
 ### ☀️ Solar Energy Potential
-Source: Global Solar Atlas
+Source: Global Solar Atlas[Global Solar Atlas](https://globalsolaratlas.info/download/usa)
 Data: Annual average photovoltaic power potential (PVOUT, kWh/kWp/day) at 250m resolution.
 Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calculation.ipynb to estimate solar generation aligned with urban charging demand.
 
 ---
 ### 💨 Wind Energy Potential 
 
-Source: [Global Wind Atlas](https://globalwindtlas.info/zh/download/)
+Source: [Global Wind Atlas](https://globalwindtlas.info/zh/download/maps-country-and-region)
 Data: Wind power density (W/m²) at multiple heights (e.g., 100m), 250m resolution.
 Usage: Used to estimate onshore wind energy potential near urban centers for renewable matching and equity analysis.
 
