@@ -67,7 +67,7 @@ Computes the **matching level** between renewable energy generation (wind and so
 Like the Gini coefficient notebook, this demonstrates the method using **the United States as a case study**, but the framework is generalizable to **China and Europe** with region-specific data.
 
 ---
-### 📊 Visualization: Figure Generation
+### 📁 Visualization: Figure Generation
 In addition to the core data processing and analysis notebooks, this repository includes a set of scripts dedicated to generating the main figures and supplementary visualizations presented in the study.
 
 The Figure/ directory contains Python scripts that produce publication-ready plots illustrating the key findings related to renewable energy matching levels and spatial equity (Gini coefficients) across China, the USA, and Europe. Each script corresponds to one main figure in the paper and its associated appendix figure, ensuring full reproducibility of the visual results.
@@ -85,11 +85,11 @@ The data/ directory contains the raw and processed datasets used across the anal
 Source: WorldPop
 Description: Global 1km resolution population count rasters (e.g., for year 2020).
 Usage: Input for Population data cropping for China_USA_Europe.ipynb to extract regional population distributions.
-Note: Users must download the global population TIF files and place them in data/population/raw/ before processing.
+Note: Users must download the global population TIF files and place them in  the [WorldPop database](https://www.worldpop.org/) before processing.
 
 ---
 ### 🏙️ Urban Boundary Data
-Source: Global Urban Boundary Dataset (GUB) – Peng Cheng Laboratory
+Source: Global Urban Boundary Dataset (GUB) – [Peng Cheng Laboratory](https://data-starcloud.pcl.ac.cn/iearthdata/)
 Dataset: GUB_Global_2018.shp (Shapefile, ~10 GB)
 Usage: Used in Urban boundary code.ipynb to identify built-up urban areas for cities in China, USA, and Europe.
 Note: This large file should be downloaded separately. Processing scripts clip it to target regions to reduce memory usage.
@@ -104,7 +104,7 @@ Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calcu
 ---
 ### 💨 Wind Energy Potential 
 
-Source: Global Wind Atlas
+Source: [Global Wind Atlas](https://globalwindtlas.info/zh/download/)
 Data: Wind power density (W/m²) at multiple heights (e.g., 100m), 250m resolution.
 Usage: Used to estimate onshore wind energy potential near urban centers for renewable matching and equity analysis.
 
