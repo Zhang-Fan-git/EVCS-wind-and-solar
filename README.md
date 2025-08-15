@@ -74,29 +74,43 @@ The Figure/ directory contains Python scripts that produce publication-ready plo
 
 These scripts use pandas, seaborn, and matplotlib to create comparative bar plots, violin plots, and annotated change visualizations that highlight regional disparities and temporal shifts in equity and renewable integration. They are designed to work seamlessly with the outputs from the previous analysis steps, enabling consistent and scalable figure generation for both the main text and supplementary materials.
 
+---
 
-##📁 Data Sources
+## 📁 Data Sources
 The data/ directory contains the raw and processed datasets used across the analysis pipeline. Due to data size and licensing, most raw datasets are not included in the repository but are publicly available through the sources listed below. Scripts assume a standardized folder structure for input data.
 
-###🌍 Population Data
+---
+
+### 🌍 Population Data 
 Source: WorldPop
 Description: Global 1km resolution population count rasters (e.g., for year 2020).
 Usage: Input for Population data cropping for China_USA_Europe.ipynb to extract regional population distributions.
 Note: Users must download the global population TIF files and place them in data/population/raw/ before processing.
-###🏙️ Urban Boundary Data
+
+---
+### 🏙️ Urban Boundary Data
 Source: Global Urban Boundary Dataset (GUB) – Peng Cheng Laboratory
 Dataset: GUB_Global_2018.shp (Shapefile, ~10 GB)
 Usage: Used in Urban boundary code.ipynb to identify built-up urban areas for cities in China, USA, and Europe.
 Note: This large file should be downloaded separately. Processing scripts clip it to target regions to reduce memory usage.
-###☀️ Solar Energy Potential
+
+---
+
+### ☀️ Solar Energy Potential
 Source: Global Solar Atlas
 Data: Annual average photovoltaic power potential (PVOUT, kWh/kWp/day) at 250m resolution.
 Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calculation.ipynb to estimate solar generation aligned with urban charging demand.
-###💨 Wind Energy Potential
+
+---
+### 💨 Wind Energy Potential 
+
 Source: Global Wind Atlas
 Data: Wind power density (W/m²) at multiple heights (e.g., 100m), 250m resolution.
 Usage: Used to estimate onshore wind energy potential near urban centers for renewable matching and equity analysis.
-###⚡ Charging Station & Parking Data
+
+---
+### ⚡ Charging Station & Parking Data
+
 Purpose: Represent potential or existing EV charging infrastructure.
 Sources:
 USA & Europe: Parking lot locations extracted from OpenStreetMap (OSM).
@@ -109,7 +123,10 @@ Gini Coefficient calculation.ipynb
 Matching level calculation.ipynb
 These include CSV or JSON files containing city-level metrics (e.g., Gini values, matching scores, mean values, percentage changes).
 Figure 4 specifically combines parking-derived charging potential with renewable supply data to assess technical feasibility and spatial equity across the three regions, using consistent methodology.
-###🔁 Reproducibility Guidelines
+
+---
+### 🔁 Reproducibility Guidelines
+
 To reproduce the full workflow:
 
 Download the required datasets from the provided links.
