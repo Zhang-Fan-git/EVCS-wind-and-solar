@@ -21,7 +21,7 @@ Preprocesses global population raster data (1km resolution) downloaded from the 
 
 **Dependencies**:  
 - WorldPop population data (input)
-- Country or region boundary files (e.g., shapefiles or GeoJSONs)
+- Country or region boundary files (e.g., shapefiles)
 
 ---
 
@@ -36,11 +36,24 @@ Uses the **Global City Boundary Dataset** provided by [Peng Cheng Laboratory](ht
 - Loads and filters the global urban boundary dataset.
 - Extracts urban boundaries for cities in the three target regions.
 - Performs spatial operations (e.g., simplification, projection, indexing) for efficient spatial analysis.
-- Outputs processed urban boundary files (e.g., GeoJSON or Shapefile) for use in later steps.
+- Outputs processed urban boundary files (e.g., Shapefile) for use in later steps.
 
 ---
 
-### 3. `Gini Coefficient calculation.ipynb`
+### 3.`Matching level calculation.ipynb`
+**Purpose**:  
+Computes the **matching level** between renewable energy generation (wind and solar) and EVCS at the city level.
+
+**Method**:
+- Spatially joins charging station locations with renewable energy potential data.
+- Outputs a matching score for each city, indicating how well local renewables meet local charging needs.
+
+**Note**:  
+Like the Gini coefficient notebook, this demonstrates the method using **the United States as a case study**, but the framework is generalizable to **China and Europe** with region-specific data.
+
+---
+
+### 4. `Gini Coefficient calculation.ipynb`
 **Purpose**:  
 Calculates the **Gini coefficient** to assess the **equity** of renewable energy (wind and solar) utilization across cities.
 
@@ -50,25 +63,10 @@ Calculates the **Gini coefficient** to assess the **equity** of renewable energy
 - A lower Gini value indicates more equitable distribution.
 
 **Note**:  
-While the method applies to all three regions, this notebook demonstrates the calculation using **USA as an example** due to data availability and consistency. The same workflow can be adapted for China and Europe.
-
----
-
-### 4. `Matching level calculation.ipynb`
-**Purpose**:  
-Computes the **matching level** between renewable energy generation (wind and solar) and EV charging demand at the city level.
-
-**Method**:
-- Spatially joins charging station locations with renewable energy potential data.
-- Calculates temporal and spatial alignment metrics (e.g., correlation, supply-demand ratio).
-- Outputs a matching score for each city, indicating how well local renewables meet local charging needs.
-
-**Note**:  
-Like the Gini coefficient notebook, this demonstrates the method using **the United States as a case study**, but the framework is generalizable to **China and Europe** with region-specific data.
+While the method applies to all three regions, this notebook demonstrates the calculation using **USA as an example** due to data availability and consistency. The same workflow can be adapted for China and Europe. 
 
 ---
 ### 📁 Visualization: Figure Generation
-In addition to the core data processing and analysis notebooks, this repository includes a set of scripts dedicated to generating the main figures and supplementary visualizations presented in the study.
 
 The Figure/ directory contains Python scripts that produce publication-ready plots illustrating the key findings related to renewable energy matching levels and spatial equity (Gini coefficients) across China, the USA, and Europe. Each script corresponds to one main figure in the paper and its associated appendix figure, ensuring full reproducibility of the visual results.
 
@@ -126,18 +124,6 @@ These include CSV or JSON files containing city-level metrics (e.g., Gini values
 Figure 4 specifically combines parking-derived charging potential with renewable supply data to assess technical feasibility and spatial equity across the three regions, using consistent methodology.
 
 ---
-### 🔁 Reproducibility Guidelines
-
-To reproduce the full workflow:
-
-Download the required datasets from the provided links.
-Organize them under the data/ folder using the expected structure (e.g., data/population/, data/urban_boundaries/, data/renewables/).
-Run notebooks in sequence:
-Population data cropping for China_USA_Europe.ipynb
-Urban boundary code.ipynb
-Matching level calculation.ipynb and Gini Coefficient calculation.ipynb
-Finally, execute the figure generation scripts.
-All scripts include path configurations and data validation steps to ensure robustness across environments.
 
 ## 🔗 Workflow Overview
 The full analysis pipeline follows a structured workflow:
