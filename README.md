@@ -120,7 +120,6 @@ Storage: Processed parking data (after cleaning and geocoding) is stored in data
 The Figures/ directory relies on processed outputs from:
 Gini Coefficient calculation.ipynb
 Matching level calculation.ipynb
-These include CSV or JSON files containing city-level metrics (e.g., Gini values, matching scores, mean values, percentage changes).
 Figure 4 specifically combines parking-derived charging potential with renewable supply data to assess technical feasibility and spatial equity across the three regions, using consistent methodology.
 
 ---
