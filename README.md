@@ -1,10 +1,10 @@
 # Integration of public electric vehicle charging stations and renewable energy sources: The global potential and spatial equity
 
-This repository contains a series of Jupyter notebooks that form a data processing and analysis pipeline to evaluate the **renewable energy potential and equity** of electric vehicle (EV) charging infrastructure in urban areas across **China, USA, and Europe**.
+This repository contains a series of Jupyter notebooks that form a data processing and analysis pipeline to evaluate the **renewable energy potential and equity** of electric vehicle charging station (EVCS) in urban areas across **China, USA, and Europe**.
 
 The workflow integrates population data, urban boundary definitions, and renewable energy generation data to compute two key metrics at the city level:
-1. **Matching Level**: The alignment between renewable energy supply (wind and solar) and charging demand.
-2. **Gini Coefficient**: A measure of equity in the distribution of renewable energy access across cities.
+1. **Matching Level**: The aggregated measure of the solar or wind energy potential across all EVCS within a city.
+2. **Gini Coefficient**: Quantifying the spatial inequity in access to EVCS. (1) assessing spatial accessibility using the Gini coefficient, and (2) incorporating renewable energy generation potential into the accessibility analysis. A measure of equity in the distribution of renewable energy access across cities.
 
 ---
 
