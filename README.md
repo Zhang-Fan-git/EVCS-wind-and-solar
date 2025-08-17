@@ -83,7 +83,7 @@ The data/ directory contains the raw and processed datasets used across the anal
 Source: WorldPop
 Description: Global 1km resolution population count rasters (e.g., for year 2020).
 Usage: Input for Population data cropping for China_USA_Europe.ipynb to extract regional population distributions.
-Note: Users must download the global population TIF files and place them in  the [WorldPop database](https://www.worldpop.org/) before processing.
+Note: Users must download the global population TIF files from  the [WorldPop database](https://www.worldpop.org/) before processing.
 
 ---
 ### 🏙️ Urban Boundary Data
@@ -97,7 +97,7 @@ Note: This large file should be downloaded separately. Processing scripts clip i
 ### ☀️ Solar Energy Potential
 Source: Global Solar Atlas[Global Solar Atlas](https://globalsolaratlas.info/download/usa)
 Data: Annual average photovoltaic power potential (PVOUT, kWh/kWp/day) at 250m resolution.
-Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calculation.ipynb to estimate solar generation aligned with urban charging demand.
+Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calculation.ipynb to estimate renewable energy potential and inequality in accessibility across grid cells.
 
 ---
 ### 💨 Wind Energy Potential 
@@ -114,7 +114,7 @@ Sources:
 USA & Europe: Parking lot locations extracted from OpenStreetMap (OSM).
 China: Parking lot locations collected via Baidu Maps API.
 Usage: In Figure 4, these parking lots are treated as candidate charging stations. Their spatial distribution and capacity are analyzed using the same Gini and matching frameworks.
-Storage: Processed parking data (after cleaning and geocoding) is stored in data/parking/.
+
 
 📈 Input Data for Figures
 The Figures/ directory relies on processed outputs from:
