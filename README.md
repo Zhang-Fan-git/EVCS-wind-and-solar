@@ -102,7 +102,7 @@ Usage: Integrated in Matching level calculation.ipynb and Gini Coefficient calcu
 ---
 ### 💨 Wind Energy Potential 
 
-Source: [Global Wind Atlas](https://globalwindtlas.info/zh/download/maps-country-and-region)
+Source: [Global Wind Atlas](https://globalwindatlas.info/zh/download/maps-country-and-region)
 Data: Wind power density (W/m²) at multiple heights (e.g., 100m), 250m resolution.
 Usage: Used to estimate onshore wind energy potential near urban centers for renewable matching and equity analysis.
 
