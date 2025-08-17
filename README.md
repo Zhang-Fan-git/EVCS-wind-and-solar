@@ -55,7 +55,7 @@ Like the Gini coefficient notebook, this demonstrates the method using **the Uni
 
 ### 4. `Gini Coefficient calculation.ipynb`
 **Purpose**:  
-Calculates the **Gini coefficient** to assess the **equity** of renewable energy (wind and solar) utilization across cities.
+Calculates the **Gini coefficient** to assess the **equity** of renewable energy (wind and solar) utilization of EVCS across cities.
 
 **Method**:
 - Aggregates charging station demand and renewable energy potential at the city level.
